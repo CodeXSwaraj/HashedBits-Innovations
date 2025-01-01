@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        header .social-links a {
+            color: white;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-right: 1px solid #ccc;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 15px;
+        }
+
+        .main-content .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .main-content .box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyLogo</div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Custom Data</h3>
+            <p>Here are some useful links and resources for you:</p>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="box">
+                <h3>Box 1: Nature</h3>
+                <img src="https://via.placeholder.com/150/92c952" alt="Nature Image">
+                <p>This box contains content related to the beauty of nature.</p>
+                <p>Additional Content: Explore lush green landscapes and vibrant flora.</p>
+            </div>
+            <div class="box">
+                <h3>Box 2: Technology</h3>
+                <img src="https://via.placeholder.com/150/771796" alt="Technology Image">
+                <p>This box focuses on the latest advancements in technology.</p>
+                <p>Additional Content: Dive into the world of AI and smart devices.</p>
+            </div>
+            <div class="box">
+                <h3>Box 3: Travel</h3>
+                <img src="https://via.placeholder.com/150/24f355" alt="Travel Image">
+                <p>This box showcases amazing travel destinations.</p>
+                <p>Additional Content: Discover exotic locations and unique cultures.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MyWebsite. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
