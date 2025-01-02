@@ -3,148 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage Layout</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        header .logo {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        header .social-links a {
-            color: white;
-            margin: 0 5px;
-            text-decoration: none;
-        }
-
-        nav {
-            background-color: #444;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            display: flex;
-            flex: 1;
-            padding: 20px;
-        }
-
-        .sidebar {
-            width: 20%;
-            background-color: #f4f4f4;
-            padding: 15px;
-            border-right: 1px solid #ccc;
-        }
-
-        .main-content {
-            width: 80%;
-            padding: 15px;
-        }
-
-        .main-content .box {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .main-content .box img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <title>FunFactz TV - Amazing Facts & More!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <div class="logo">MyLogo</div>
+        <div class="logo">
+            <img src="funfactztv.png" alt="FunFactz TV Logo"> </div>
         <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+            <a href="https://www.youtube.com/@FunFactzTV" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
 
-    <div class="container">
+    <main>
         <aside class="sidebar">
-            <h3>Custom Data</h3>
-            <p>Here are some useful links and resources for you:</p>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
+            <h2>Featured Videos</h2>
+            <div class="sidebar-box">
+                <h3>Amazing Animal Facts</h3>
+                <img src="animal.png" alt="Amazing Animal Facts">
+                <p>Discover incredible facts about the animal kingdom!  From the tiniest insects to the largest whales, we've got you covered.</p>
+            </div>
+            <div class="sidebar-box">
+                <h3>Incredible History Mysteries</h3>
+                <img src="incredible.png" alt="Incredible History Mysteries">
+                <p>Unravel the secrets of the past with our captivating videos on historical mysteries and unsolved enigmas.</p>
+            </div>
+            <div class="sidebar-box">
+                <h3>Science & Technology Wonders</h3>
+                <img src="science.png" alt="Science & Technology Wonders">
+                <p>Explore the wonders of science and technology with our fascinating videos on cutting-edge discoveries and innovations.</p>
+            </div>
         </aside>
+        <section class="content">
+            <h1>Welcome to FunFactz TV!</h1>
+            <p>Get ready to be amazed! FunFactz TV brings you a captivating collection of videos filled with incredible facts, historical mysteries, and scientific wonders. Subscribe now and join the adventure!</p>
 
-        <main class="main-content">
-            <div class="box">
-                <h3>Box 1: Nature</h3>
-                <img src="https://via.placeholder.com/150/92c952" alt="Nature Image">
-                <p>This box contains content related to the beauty of nature.</p>
-                <p>Additional Content: Explore lush green landscapes and vibrant flora.</p>
-            </div>
-            <div class="box">
-                <h3>Box 2: Technology</h3>
-                <img src="https://via.placeholder.com/150/771796" alt="Technology Image">
-                <p>This box focuses on the latest advancements in technology.</p>
-                <p>Additional Content: Dive into the world of AI and smart devices.</p>
-            </div>
-            <div class="box">
-                <h3>Box 3: Travel</h3>
-                <img src="https://via.placeholder.com/150/24f355" alt="Travel Image">
-                <p>This box showcases amazing travel destinations.</p>
-                <p>Additional Content: Discover exotic locations and unique cultures.</p>
-            </div>
-        </main>
-    </div>
+            <h2>Explore Our Videos</h2>
+            <p>We cover a wide range of topics, ensuring there's something for everyone. From mind-blowing animal facts to unsolved historical mysteries, our videos are designed to entertain, educate, and inspire.</p>
+
+            <h2>Subscribe Today!</h2>
+            <p><a href="https://www.youtube.com/@funFACTZTV" class="button">Subscribe on YouTube</a></p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 MyWebsite. All Rights Reserved.</p>
+        <p>© 2023 FunFactz TV. All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -1,3 +1,4 @@
+// 4. Write a function to perform this. You are given two numbers n1 and n2. You need to find the sum of the products of their corresponding digits. So, for a number n1= 6 and n2 = 34, you'll do (6*4)+(0*3) = 24.
 function sumOfProducts(n1, n2) {
     let str1 = n1.toString().split('').reverse();
     let str2 = n2.toString().split('').reverse();
