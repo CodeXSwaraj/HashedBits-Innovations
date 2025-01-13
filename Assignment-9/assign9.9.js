@@ -9,7 +9,7 @@ function mergeObjects(obj1, obj2) {
   
   // Example usage
   const object1 = {
-    name: "Aditya Patil",
+    name: "Swaraj Patil",
     age: 22,
   };
   

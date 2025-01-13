@@ -3,7 +3,7 @@
 
 // Create the person object
 const person = {
-    name: "Aditya Patil",
+    name: "Swaraj Patil",
     age: 22,
     occupation: "Software Developer",
   };
